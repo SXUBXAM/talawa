@@ -1,0 +1,38 @@
+# .github/workflows/auto-label.yml
+name: Auto Label Issues
+on:
+  issues:
+    types: ['opened', 'edited']
+
+jobs:
+  auto-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Label Based on Issue Content
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const issueBody = context.payload.issue.body.toLowerCase();
+            const issueNumber = context.payload.issue.number;
+            const labelsToAdd = [];
+
+            // Check for keywords and add corresponding labels
+            if (issueBody.includes("dependabot") || issueBody.includes("dependency") || issueBody.includes("dependencies")) {
+              labelsToAdd.push("dependencies", "security", "good first issue");
+            }
+            if (issueBody.includes("security")) {
+              labelsToAdd.push("security", "good first issue");
+            }
+            if (issueBody.includes("layout") || issueBody.includes("screen") || issueBody.includes("design") || issueBody.includes("figma")) {
+              labelsToAdd.push("ui/ux", "good first issue");
+            }
+
+            // Add labels to the issue
+            if (labelsToAdd.length > 0) {
+              await github.issues.addLabels({
+                issue_number: issueNumber,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: labelsToAdd
+              });
+            }
