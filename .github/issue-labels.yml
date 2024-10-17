@@ -1,31 +1,26 @@
-# Keywords for Dependencies-related issues
 dependencies:
-  - "dependabot"
-  - "dependency"
-  - "dependencies"
+  keywords:
+    - "dependabot"
+    - "dependency"
+    - "dependencies"
+  labels:
+    - "dependencies"
+    - "security"
+    - "good first issue"
 
-# Keywords for Security-related issues
 security:
-  - "security"
+  keywords:
+    - "security"
+  labels:
+    - "security"
+    - "good first issue"
 
-# Keywords for Design-related issues
 design:
-  - "layout"
-  - "screen"
-  - "design"
-  - "figma"
-
-# Label configurations
-labels:
-  dependencies:
-    - dependencies
-    - security
-    - good first issue
-
-  security:
-    - security
-    - good first issue
-
-  design:
-    - ui/ux
-    - good first issue
+  keywords:
+    - "layout"
+    - "screen"
+    - "design"
+    - "figma"
+  labels:
+    - "ui/ux"
+    - "good first issue"
