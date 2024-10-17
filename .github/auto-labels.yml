@@ -1,0 +1,26 @@
+# .github/auto-labels.yml
+dependencies:
+  - "dependabot"
+  - "dependency"
+  - "dependencies"
+
+security:
+  - "security"
+
+design:
+  - "layout"
+  - "screen"
+  - "design"
+  - "figma"
+
+labels:
+  dependencies:
+    - dependencies
+    - security
+    - good first issue
+  security:
+    - security
+    - good first issue
+  design:
+    - ui/ux
+    - good first issue
