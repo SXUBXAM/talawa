@@ -1177,6 +1177,7 @@ packages:
     dependency: "direct main"
     description:
       name: quick_actions
+
       sha256: "2c1d9a91f3218b4e987a7e1e95ba0415b7f48a2cb3ffacc027a1e3d3c117223f"
       url: "https://pub.dev"
     source: hosted
@@ -1390,6 +1391,7 @@ packages:
     dependency: "direct main"
     description:
       name: syncfusion_flutter_calendar
+
       sha256: "17bc2c2e95737336c1bf54e27f6d006f11e3384dd556d13ee3a9a324416ea1e4"
       url: "https://pub.dev"
     source: hosted
@@ -1398,6 +1400,7 @@ packages:
     dependency: transitive
     description:
       name: syncfusion_flutter_core
+
       sha256: "7130fc3259247946b59fe9b76ee89500c775c3f7e5c1d0826f3105e1dd0bebf6"
       url: "https://pub.dev"
     source: hosted
@@ -1406,6 +1409,7 @@ packages:
     dependency: "direct main"
     description:
       name: syncfusion_flutter_datepicker
+
       sha256: "61efc09e962d7b7cc3c7d33a2e44ec027112403af49590d5cc1025a255cc34fa"
       url: "https://pub.dev"
     source: hosted
@@ -1509,6 +1513,7 @@ packages:
     dependency: "direct main"
     description:
       name: url_launcher
+
       sha256: "9d06212b1362abc2f0f0d78e6f09f726608c74e3b9462e8368bb03314aa8d603"
       url: "https://pub.dev"
     source: hosted
@@ -1613,6 +1618,7 @@ packages:
     dependency: "direct main"
     description:
       name: vibration
+
       sha256: f0af02af2d63132135ae0332a3e54d5de718e214ee94c4f082176ef6ce624a4b
       url: "https://pub.dev"
     source: hosted
@@ -1621,6 +1627,7 @@ packages:
     dependency: transitive
     description:
       name: vibration_platform_interface
+
       sha256: f66b39aab2447038978c16f3d6f77228e49ef5717556e3da02313e044e4a7600
       url: "https://pub.dev"
     source: hosted
@@ -1629,6 +1636,7 @@ packages:
     dependency: "direct main"
     description:
       name: video_player
+
       sha256: "4a8c3492d734f7c39c2588a3206707a05ee80cef52e8c7f3b2078d430c84bc17"
       url: "https://pub.dev"
     source: hosted

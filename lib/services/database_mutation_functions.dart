@@ -6,6 +6,7 @@ import 'package:talawa/locator.dart';
 import 'package:talawa/models/organization/org_info.dart';
 import 'package:talawa/utils/post_queries.dart';
 import 'package:talawa/utils/queries.dart';
+
 import 'package:talawa/utils/time_conversion.dart';
 
 /// DataBaseMutationFunctions class provides different services that are under the context of graphQL mutations and queries.
@@ -98,6 +99,8 @@ class DataBaseMutationFunctions {
             return await gqlAuthQuery(query, variables: variables);
           }
         } else if (result.data != null && result.isConcrete) {
+<<<<<<< HEAD
+=======
           // coverage:ignore-start
           traverseAndConvertDates(
             result.data ?? <String, dynamic>{},
@@ -105,6 +108,7 @@ class DataBaseMutationFunctions {
             splitDateTimeLocal,
           );
           // coverage:ignore-end
+>>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
           return result;
         }
         return noData;
@@ -125,11 +129,14 @@ class DataBaseMutationFunctions {
     String mutation, {
     Map<String, dynamic>? variables,
   }) async {
+<<<<<<< HEAD
+=======
     // coverage:ignore-start
     if (variables != null) {
       traverseAndConvertDates(variables, convertLocalToUTC, splitDateTimeUTC);
     }
     // coverage:ignore-end
+>>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
     final MutationOptions options = MutationOptions(
       document: gql(mutation),
       variables: variables ?? <String, dynamic>{},
@@ -170,11 +177,14 @@ class DataBaseMutationFunctions {
     Map<String, dynamic>? variables,
     bool reCall = true,
   }) async {
+<<<<<<< HEAD
+=======
     // coverage:ignore-start
     if (variables != null) {
       traverseAndConvertDates(variables, convertLocalToUTC, splitDateTimeUTC);
     }
     // coverage:ignore-end
+>>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
     final MutationOptions options = MutationOptions(
       document: gql(mutation),
       variables: variables ?? <String, dynamic>{},
@@ -227,6 +237,8 @@ class DataBaseMutationFunctions {
             result.exception!,
           );
         } else if (result.data != null && result.isConcrete) {
+<<<<<<< HEAD
+=======
           // coverage:ignore-start
           traverseAndConvertDates(
             result.data ?? <String, dynamic>{},
@@ -234,6 +246,7 @@ class DataBaseMutationFunctions {
             splitDateTimeLocal,
           );
           // coverage:ignore-end
+>>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
           return result;
         }
         return noData;

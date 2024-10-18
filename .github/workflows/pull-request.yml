@@ -173,7 +173,10 @@ jobs:
         run: flutter build ios --release --no-codesign
 
   Branch-check:
+# <<<<<<< HEAD
+# =======
     if: ${{ github.actor != 'dependabot[bot]' }}
+# >>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
     name: "Base branch check"
     runs-on: ubuntu-latest
     steps:
@@ -184,7 +187,10 @@ jobs:
           exit 1
 
   Check-Unauthorized-Changes:
+# <<<<<<< HEAD
+# =======
     if: ${{ github.actor != 'dependabot[bot]' }}
+# >>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
     name: Checks if no unauthorized files are changed
     runs-on: ubuntu-latest
     steps:
@@ -224,7 +230,10 @@ jobs:
           exit 1
 
   Count-Changed-Files:
+# <<<<<<< HEAD
+# =======
     if: ${{ github.actor != 'dependabot[bot]' }}
+# >>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
     name: Checks if number of files changed is acceptable
     runs-on: ubuntu-latest
     steps:

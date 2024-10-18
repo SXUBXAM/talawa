@@ -23,7 +23,10 @@ on:
 
 jobs:
   Checking-for-unauthorized-file-changes:
+# <<<<<<< HEAD
+# =======
     if: ${{ github.actor != 'dependabot[bot]' }}
+# >>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
     name: Checking for unauthorized file changes
     runs-on: ubuntu-latest
 

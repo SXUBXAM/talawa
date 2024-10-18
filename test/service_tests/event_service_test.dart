@@ -119,7 +119,11 @@ void main() {
         (realInvocation) async => QueryResult(
           options: QueryOptions(document: gql(query)),
           data: {
+<<<<<<< HEAD
+            'cretedEvent': {
+=======
             'createdEvent': {
+>>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
               '_id': 'eventId',
               'title': 'Test task',
               'description': 'Test description',
@@ -138,13 +142,20 @@ void main() {
       when(
         dataBaseMutationFunctions.gqlAuthMutation(
           EventQueries().registerForEvent(),
+<<<<<<< HEAD
+=======
           variables: {'eventId': 'eventId'},
+>>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
         ),
       ).thenAnswer(
         (realInvocation) async => QueryResult(
           options: QueryOptions(document: gql(query)),
           data: {
+<<<<<<< HEAD
+            'register for an event': {
+=======
             'registerForEvent': {
+>>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
               '_id': 'eventId',
             },
           },
@@ -252,7 +263,10 @@ void main() {
       final model = EventService();
       expect(model.eventStream, isA<Stream<List<Event>>>());
     });
+<<<<<<< HEAD
+=======
 
+>>>>>>> 67ce8e0ca5c44e11edb4cacddfbbee7708c7b02b
     test('Test createVolunteerGroup method', () async {
       final dataBaseMutationFunctions = locator<DataBaseMutationFunctions>();
       const query = '';
